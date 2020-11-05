@@ -19,4 +19,8 @@ public class TestController {
         String val= (String) session.getAttribute("msg");
         return val;
     }
+    @GetMapping("/add")
+    public void add(){
+        System.out.println("add..");
+    }
 }
