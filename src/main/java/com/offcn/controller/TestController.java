@@ -23,4 +23,9 @@ public class TestController {
     public void add(){
         System.out.println("add..");
     }
+
+    @GetMapping("/add1")
+    public void add1(){
+        System.out.println("add..");
+    }
 }
