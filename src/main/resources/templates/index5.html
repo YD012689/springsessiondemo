@@ -1,0 +1,16 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+<h1 th:if="${flag=='yes'}">中公教育</h1>
+<h1 th:unless="${flag=='no'}">优就业</h1>
+<div th:switch="${menu}">
+    <p th:case="'admin'">User is an administrator</p>
+    <p th:case="'manager'">User is an manager</p>
+</div>
+</body>
+</html>

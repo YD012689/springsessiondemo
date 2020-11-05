@@ -1,0 +1,21 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+<h1 th:text="${username}"></h1>
+<!-- 给属性赋值 th:value、th:属性名称 -->
+<input type="text" name="names" th:value="${username}"/>
+</br>
+<em th:size="${username}"></em>
+<!-- 字符串拼接 -->
+<span th:text="'欢迎来:'+${username}+'学习!'"></span>
+</br>
+<!-- 字符串拼接,方式2 -->
+<span th:text="|欢迎来:${username}学习!|"></span>
+
+</body>
+</html>

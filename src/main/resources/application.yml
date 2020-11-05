@@ -1,0 +1,12 @@
+server:
+  port: 8000
+spring:
+  redis:
+    host: 192.168.188.146
+    port: 6379
+  session:
+    store-type: redis
+    timeout: 1800
+  thymeleaf:
+    cache: false
+
